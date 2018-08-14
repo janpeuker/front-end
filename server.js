@@ -1,7 +1,8 @@
    require('@google-cloud/debug-agent').start({
-     serviceContext: {
+     allowExpressions: true,
+	 serviceContext: {
 	    service: 'front-end',
-	    version: 'VERSION'
+	    version: '1.0.0'
 	  }
 	})
   , require('@google-cloud/profiler').start({
